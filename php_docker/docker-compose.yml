@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.3'
 
 services:
   php-env:
@@ -6,7 +6,9 @@ services:
           context: .
       container_name: php-env
       volumes:
-          - ./php:/var/www/html
+        #   - ./php:/var/www/html
+        # add path my proyect
+          - /Users/andersonlugojacome/Library/CloudStorage/SynologyDrive-demand/works/GitHub/api_adc:/var/www/html
       ports:
           - "9000:80"
       
